@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2{
+    color: darkcyan;
+}
+.para
+{
+    font-family:cursive;
+}
+#new
+{
+    font-size: 30px;
+
+}
+h2::first-letter {
+  color:darkmagenta;
+  font-size: xx-large;
+}
+div p {
+  background-color: yellow;
+}
+div > p {
+  background-color: red;
+}
+div + p {
+  background-color: darkgreen;
+}
+div ~ p {
+  background-color:orchid;
+}
+p:first-child {
+ font-size: 40px;
+}
+h1::before {
+  content: "*******";
+}
+h1::after {
+  content: "*******";
+}
+::marker { 
+  color: red;
+  font-size: 23px;
+}
+</style>
+</head>
+<body>
+<h1>Demonstrating selectors</h1>
+<h2>Element selector</h2>
+
+<p class="para">Class Selector</p>
+<p id="new">Id selector</p>
+
+<div>
+  <p>Child Selector and first child</p>
+  <section><p>Descendant selector.</p></section>
+</div>
+
+<p>Adjacent Sibling selector</p>
+<p>Not the first child</p>
+<ul>
+    <li>Html</li>
+    <li>Css</li>
+    <li>Javascript</li>
+  </ul>
+  
+  <ol>
+    <li>C++</li>
+    <li>Java</li>
+    <li>Python</li>
+  </ol>
+
+
+</body>
+</html>
